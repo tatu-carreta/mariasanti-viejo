@@ -1,0 +1,47 @@
+﻿<!Doctype html>
+<html lang="ES">
+<head>
+<meta charset="utf-8">
+<link href="../css/estilos.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+<title></title>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".abrir").click(function(){
+		$(".divHover").animate({top:'-150px'}, 200);
+		}, function() {
+			$(".divHover").animate({top:'65px'},160);
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="modal">
+	<form id="" method="post" action="">
+			<h3>Ingrese título del grupo</h3>
+			<ul id="" class="imgCarga">
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/>
+					<a href="#" class="eliminar">Eliminar</a>
+					<div class="divHover">
+							<a href="#" class="abrir">Abrir</a>
+						<p>Coloque un epígrafe en castellano.</p>
+					</div>
+				</li>
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/></li>
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/></li>
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/></li>
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/></li>
+				<li><img src="../imagenes/obras/circular/2012/a.jpg"/></li>
+			</ul>
+			<div class="btnModal">
+				<input type="button" value="Publicar" style="margin-right:10px" class="btn">
+				<input type="button" value="Cancelar" class="btn">
+			</div>
+	</form>
+</div>
+</body>
+</html>
+
